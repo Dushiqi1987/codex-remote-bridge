@@ -1,0 +1,17 @@
+{
+  "skill_name": "codex-remote-bridge",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "我的 AutoDL SSH 是 ssh -p 23001 root@gpu.example.com，本地代理软件 HTTP 端口是 7890。请只给出配置命令，不连接真实服务器；原 .env 里已有其他配置。",
+      "expected_output": "直接转发远端 17891 到本地 HTTP 7890；不启动 Python 转发器；保留和备份环境配置，显式导出或用启动器，区分网络验证和 Codex 实际请求。",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "本地 Wi-Fi 直接可用，服务器不能联网。SSH 是 ssh -p 23002 student@gpu.example.com。本地 11450 已占用，远端用 17891。只给可运行的步骤和回滚，不执行任何网络连接。",
+      "expected_output": "选择空闲本地端口并同步监听和 SSH -R；解释正常路由而非指定 Wi-Fi；显式加载环境；保留回环绑定，提供本地、远端、Codex 分层验证及停止和恢复步骤。",
+      "files": []
+    }
+  ]
+}
