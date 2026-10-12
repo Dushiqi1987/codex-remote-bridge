@@ -1,0 +1,4 @@
+interface:
+  display_name: "本地 Codex 连接服务器 Codex CLI"
+  short_description: "通过 SSH 反向隧道共享本地代理或网络，让 GPU 服务器上的 Codex CLI 联网"
+  default_prompt: "使用 $codex-remote-bridge 为我的 GPU 服务器配置本地代理共享，并验证服务器 Codex CLI 的联网链路。"
