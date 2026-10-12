@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+.env
+.env.*
+auth.json
+*.pem
+*.key
+id_rsa*
+id_ed25519*
+*.log
+.DS_Store
